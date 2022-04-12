@@ -8,18 +8,30 @@
   <title>Document</title>
 </head>
 <body>
+  KALKULAČKA
   <label>
     Zadej číslo A
-    <input type="number" name="A">
+    <input type="number" name="A" step="1" pattern="^[-/d]/d*$">
   </label>
   <label>
     Zadej číslo B
-    <input type="number" name="B">
+    <input type="number" name="B" step="1" pattern="^[-/d]/d*$">
   </label>
   
-  <div id="vysledek">
-    Vyhodnocení:
-    <span></span>
+  <div id="soucet">
+    Součet A + B = <span></span>
+  </div>
+
+  <div id="rozdil">
+    Rozdíl A - B = <span></span>
+  </div>
+
+  <div id="soucin">
+    Součin A * B = <span></span>
+  </div>
+
+  <div id="podil">
+    Podíl A / B = <span></span>
   </div>
 
   <script src="input.js">
